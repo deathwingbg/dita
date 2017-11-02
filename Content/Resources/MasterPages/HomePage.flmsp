@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="335" MadCap:lastWidth="1160" MadCap:snippetVariables="General.CompanyName:myPOS Europe Ltd,;General.CityStateZip:London\, UK,;General.Email:support@mypos.eu,;General.Facebook:https://www.facebook.com/myposofficial,;General.Twitter:https://twitter.com/myposofficial,;General.StreetAddress:Office 28\, Level 33\, 25 Canada Square\, Canary Wharf\, London E14 5LB,;General.ProductName:myPOS,;General.PhoneNumber:+44 20 3582 2068,;General.LinkedIn:https://www.linkedin.com/company/mypos-official/,;General.Instagram:https://www.instagram.com/mypos.official/,">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="482" MadCap:lastWidth="1160" MadCap:snippetVariables="General.CompanyName:myPOS Europe Ltd,;General.CityStateZip:London\, UK,;General.Email:support@mypos.eu,;General.Facebook:https://www.facebook.com/myposofficial,;General.Twitter:https://twitter.com/myposofficial,;General.StreetAddress:Office 28\, Level 33\, 25 Canada Square\, Canary Wharf\, London E14 5LB,;General.ProductName:myPOS,;General.PhoneNumber:+44 20 3582 2068,;General.LinkedIn:https://www.linkedin.com/company/mypos-official/,;General.Instagram:https://www.instagram.com/mypos.official/,">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="" />
@@ -42,8 +42,7 @@
                         </table>
                     </div>
                     <div>
-                        <p>
-                            <img src="../Images/Assets/logo-footer.png" />
+                        <p><a href="https://www.mypos.eu/"><img src="../Images/Assets/logo-footer.png" /></a>
                         </p>
                         <p><MadCap:variable name="General.CompanyName" />
                         </p>

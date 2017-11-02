@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2017 r3 Generated HTML5 - Top Navigation.fltar" Date="2017-11-02T13:36:41.7580609+02:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2017 r3 Generated HTML5 - Top Navigation.fltar" Date="2017-11-02T16:10:50.1631701+02:00">
     <Messages>Compiling target HTML5 - Top Navigation...
 WARNING: Please note that you are using a trial version. The generated output will contain scrambled content.
 Removing previously generated content...
@@ -47,6 +47,9 @@ Generated C_Procedure Topics\Procedure1.htm
 Processing topic: C_Procedure Topics\Procedure2.htm...
 Applying master page OtherTopics.flmsp...
 Generated C_Procedure Topics\Procedure2.htm
+Processing topic: mypos.html...
+Topic contains invalid XHTML.
+Generated mypos.html
 Processing topic: B_Feature Topics\Feature3.htm...
 Applying master page OtherTopics.flmsp...
 Generated B_Feature Topics\Feature3.htm
@@ -92,6 +95,7 @@ Saving log to "C:\Users\pavel.parushev\Documents\My Projects\developers\develope
     <Warnings>
         <LogEntry Message="WARNING: Please note that you are using a trial version. The generated output will contain scrambled content." LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10068" />
         <LogEntry File="../../../Content/D_Contact us/Contact us.htm" Message="Topic contains invalid XHTML." LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="20058" />
+        <LogEntry File="../../../Content/mypos.html" Message="Topic contains invalid XHTML." LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="20058" />
     </Warnings>
     <Errors />
 </MadCapLog>
