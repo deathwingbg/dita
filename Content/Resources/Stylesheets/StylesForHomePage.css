@@ -153,10 +153,10 @@ div.home-tiles > div
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 300px;
-	background: -webkit-linear-gradient(#696969, black, #696969);
-	background: -o-linear-gradient(#696969, black, #696969);
-	background: -moz-linear-gradient(#696969, black, #696969);
-	background: linear-gradient(#696969, black, #696969);
+	background: -webkit-linear-gradient(#696969, #696969, black);
+	background: -o-linear-gradient(#696969, #696969, black);
+	background: -moz-linear-gradient(#696969, #696969, black);
+	background: linear-gradient(#696969, #696969, black);
 	padding-top: 20px;
 	padding-bottom: 30px;
 	padding-bottom: 20px;
@@ -257,7 +257,7 @@ div.info-section > div
 div.info-section > div:nth-child(1)
 {
 	width: 16.667%;
-	margin-left: 16.667%;
+	margin-left: 20%;
 }
 
 div.info-section > div:nth-child(2)
@@ -268,8 +268,8 @@ div.info-section > div:nth-child(2)
 
 div.info-section > div:nth-child(3)	/*Video Container*/
 {
-	width: 33.333%;
-	margin-left: 5%;
+	width: 16.667%;
+	margin-left: 2%;
 }
 
 /*=Elements for content contained within each info section=*/
@@ -416,13 +416,16 @@ Styles after this point are styles that are for specific mediums. If any additio
 	{
 		width: 100%;
 		margin-left: 0%;
-		margin-bottom: 5%;
+		margin-bottom: 10%;
+		margin-top: 5%;
 	}
 
 	div.info-section > div:nth-child(3)
 	{
 		width: 100%;
 		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
 	}
 
 	p.info-title
