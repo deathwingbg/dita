@@ -27,6 +27,7 @@ body
 h1
 {
 	font-size: 2.75em;
+	padding-bottom: 70px;
 }
 
 h2
@@ -118,11 +119,11 @@ div.topic-hero	/*This is the Hero/Banner on the Home Page - To replace the banne
 
 div.home-tiles-container
 {
-	padding-bottom: 60px;
+	padding-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;
-	width: 75%;
-	margin-top: 150px;
+	width: 90%;
+	margin-top: 75px;
 	padding-top: 30;
 }
 
@@ -153,10 +154,10 @@ div.home-tiles > div
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	height: 300px;
-	background: -webkit-linear-gradient(#303030, #303030, #303030);
-	background: -o-linear-gradient(#303030, #303030, #303030);
-	background: -moz-linear-gradient(#303030, #303030, #303030);
-	background: linear-gradient(#303030, #303030, #303030);
+	background: -webkit-linear-gradient(#505050, #505050, #505050);
+	background: -o-linear-gradient(#505050, #505050, #505050);
+	background: -moz-linear-gradient(#505050, #505050, #505050);
+	background: linear-gradient(#505050, #505050, #505050);
 	padding-top: 20px;
 	padding-bottom: 30px;
 	padding-bottom: 20px;
@@ -168,25 +169,19 @@ div.home-tiles > div
 
 div.home-tiles > div:nth-child(1)
 {
-	width: 16.667%;
-	margin-left: 12.667%;
+	width: 28%;
+	margin-left: 5%;
 }
 
 div.home-tiles > div:nth-child(2)
 {
-	width: 16.667%;
+	width: 28%;
 	margin-left: 2%;
 }
 
 div.home-tiles > div:nth-child(3)
 {
-	width: 16.667%;
-	margin-left: 2%;
-}
-
-div.home-tiles > div:nth-child(4)
-{
-	width: 16.667%;
+	width: 28%;
 	margin-left: 2%;
 }
 
