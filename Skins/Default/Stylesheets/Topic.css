@@ -477,17 +477,27 @@ a.glossaryTerm
 	display: none;
 }
 
+div.MCBreadcrumbsBox_0
+{
+	border-bottom: none;
+	font-size: .7em;
+	font-style: italic;
+	border-bottom-width: 1px;
+	border-bottom-style: none;
+	border-bottom-color: black;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+
 .dropDownHotspot
 {
-	color: #19b9f3;
-	font-weight: bold;
+	color: #7469b9;
 	text-decoration: none;
 }
 
 .dropDownHotspot:link
 {
-	color: #19b9f3;
-	font-weight: bold;
+	color: #7469b9;
 	text-decoration: none;
 }
 
@@ -510,6 +520,17 @@ a.glossaryTerm
 .dropDownHead
 {
 	text-decoration: none;
+}
+
+.dropDownHead.dropDownHeadside-content
+{
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.dropDownBody
+{
+	border-bottom: 1px solid #d3d3d3;
 }
 
 .MCWebHelpFramesetLink a

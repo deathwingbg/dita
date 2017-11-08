@@ -15,24 +15,25 @@ EXAMPLE: Since the Topic/Banner image is at the top of the home page, it will be
 
 ===========================================================================================================================================================*/
 
-/* Home Page General Styles*/
+/*==Home Page General Styles==*/
 
 body
 {
 	font-family: Arial;
 	line-height: 1.5em;
-	background-color: #e4e8e8;
+	background-color: #fff;
 }
 
 h1
 {
 	font-size: 2.75em;
-	padding-bottom: 70px;
+	color: #000000;
 }
 
 h2
 {
 	font-size: 1.6785em;
+	color: #000000;
 }
 
 p
@@ -40,11 +41,6 @@ p
 	color: #5a5a5a;
 	margin-bottom: 8px;
 	margin-top: 8px;
-}
-
-span.highlight	/*Span class used to change the color of text within block elements*/
-{
-	color: #19b9f3;
 }
 
 .center
@@ -66,7 +62,13 @@ span.highlight	/*Span class used to change the color of text within block elemen
 
 MadCap|searchBarProxy
 {
-	display: none !important;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	float: none;
+	width: 50%;
 }
 
 MadCap|topicToolbarProxy
@@ -91,48 +93,84 @@ html.home-page
 	mc-community-features: disabled;
 }
 
-/*==Top Navigation Bar Section==*/
+/*==Responsive Header Styles==*/
 
-nav.title-bar
+#contentBody > .responsive-header
 {
-	position: absolute;
-	width: 100%;
-	opacity: 0.8;
+	padding-top: 150px;
+	background-color: transparent;
 }
 
 /*==Home Page Hero Section==*/
 
-div.topic-hero	/*This is the Hero/Banner on the Home Page - To replace the banner image with your own, change background-image property*/
+div.topic-hero	/*This is the first Hero/Banner on the Home Page - To replace the banner image with your own, change background-image property*/
 {
-	background-size: cover;
-	background-repeat: no-repeat;
-	padding-top: 20px;
 	height: 500px;
 	padding-bottom: 150px;
 	padding-top: 150px;
-	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-	background-image: url('../Images/Assets/code.jpg');
-	background-position: center;
+	background-color: #d3d3d3;
+	background-image: url('../Images/Assets/HeroImages/HeroImage-1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center 0;
+}
+
+div.cta	/*Call to action button on the Home Page*/
+{
+	color: #FFF;
+	background-color: #7469b9;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 14px 20px;
+	width: 200px;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	margin-top: 50px;
+}
+
+div.cta:hover	/*When hovering over the CTA button the following properties apply*/
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transform: scale(1.01);
+}
+
+a.cta:link
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+a.cta:visited
+{
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*==Search bar elements==*/
+
+.search-field	/*The box-shadow property is applied to style to provide shadow on the search bar*/
+{
+	box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+div.search-container
+{
+	margin-top: -36px;
+	margin-bottom: 100px;
 }
 
 /*==Home Tiles section==*/
 
-div.home-tiles-container
-{
-	padding-bottom: 30px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 90%;
-	margin-top: 75px;
-	padding-top: 30;
-}
-
 div.home-tiles	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
 {
-	padding-bottom: 30px;
 	mc-grid-row: true;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 1%;
+	margin-bottom: 1%;
 }
 
 div.home-tiles::before
@@ -153,36 +191,38 @@ div.home-tiles > div
 	float: left;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	height: 300px;
-	background: -webkit-linear-gradient(#505050, #505050, #505050);
-	background: -o-linear-gradient(#505050, #505050, #505050);
-	background: -moz-linear-gradient(#505050, #505050, #505050);
-	background: linear-gradient(#505050, #505050, #505050);
-	padding-top: 20px;
-	padding-bottom: 30px;
-	padding-bottom: 20px;
-	padding-left: 11.5px;
-	padding-right: 11.5px;
+	background-color: transparent;
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+	/*Adds transition animation when switching between screen sizes*/
+	-moz-border-radius: 20x;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	border: 1px solid #d3d3d3;
+	padding: 60px 10px;
 	overflow: hidden;
+}
+
+div.home-tiles > div:hover	/*When hovering over a home-tile, these properties apply*/
+{
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 div.home-tiles > div:nth-child(1)
 {
-	width: 28%;
-	margin-left: 5%;
+	width: 16.667%;
+	margin-left: 24%;
 }
 
 div.home-tiles > div:nth-child(2)
 {
-	width: 28%;
-	margin-left: 2%;
+	width: 16.667%;
+	margin-left: 1%;
 }
 
 div.home-tiles > div:nth-child(3)
 {
-	width: 28%;
-	margin-left: 2%;
+	width: 16.667%;
+	margin-left: 1%;
 }
 
 /*=Elements for text contained within each home-tile=*/
@@ -190,37 +230,71 @@ div.home-tiles > div:nth-child(3)
 p.tile-title
 {
 	text-align: center;
-	font-weight: bold;
-	color: #19b9f3;
+	color: #048EF8;
+	font-size: 1.4em;
 }
 
 p.tile-subtitle
 {
 	text-align: center;
-	color: #ffffff;
+	color: #048EF8;
 	border-bottom: 1px solid #d3d3d3;
 }
 
 p.tile-content
 {
-	color: #ffffff;
-	font-size: 0.9em;
+	text-align: center;
+	color: #7E8890;
+	font-size: 0.8em;
+}
+
+p.tile-items
+{
+	color: #7E8890;
+	font-size: 0.7em;
 	text-align: center;
 }
 
-div.home-tiles a	/*Complex Selector: Links within the home tiles will have the following properties*/
+div.mega-header
+{
+	text-align: center;
+	color: #000000;
+	font-size: 2em;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+div.home-tiles a	/*Complex Selector: Any anchor (links) tags that are within div.home-tiles will have the following properties*/
 {
 	text-decoration: none;
-	color: #19b9f3;
+	color: #565656;
 	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 div.home-tiles a:hover	/*Complex Selector: When hovering over links within the home tiles the following properties will apply.*/
 {
-	color: #fff;
+	color: #7469b9;
 }
 
-/*==Info section==*/
+/*=Info-container section=*/
+
+div.info-container	/*div.info-container contains the first Hero/Banner on the Home Page - To replace the banner image with your own, point the background-image property to your own image.*/
+{
+	margin-left: auto;
+	margin-top: 100px;
+	margin-right: auto;
+	padding-bottom: 75px;
+	padding-top: 100px;
+	box-shadow: inset -1px 1px 17px 0px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	color: #fff;
+	background-color: #292f42;
+	/*Create the parallax scrolling effect*/
+	background-attachment: fixed;
+	background-position: center 0;
+	background-image: url('../Images/Assets/HeroImages/HeroImage-2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
 div.info-section	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
 {
@@ -252,65 +326,79 @@ div.info-section > div
 div.info-section > div:nth-child(1)
 {
 	width: 16.667%;
-	margin-left: 22%;
+	margin-left: 16.667%;
 }
 
 div.info-section > div:nth-child(2)
 {
 	width: 16.667%;
-	margin-left: 2%;
+	margin-left: 6%;
 }
 
-div.info-section > div:nth-child(3)	/*Video Container*/
+div.info-section > div:nth-child(3)	/*Div that contains "Tips"*/
 {
-	width: 16.667%;
-	margin-left: 2%;
+	width: 33.333%;
+	margin-left: 5%;
+}
+
+div.info-container p	/*Complex Selector: Any <p> that is contained within div.info-container will have the following properties*/
+{
+	color: #fff;
 }
 
 /*=Elements for content contained within each info section=*/
 
 p.info-title
 {
+	font-size: 2em;
 	line-height: 1em;
-	padding-bottom: 10px;
-	border-bottom: 1px solid #9c9c9c;
 }
 
 p.info-content
 {
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 
-/*==Home Page Footer==*/
+p.tip	/*Paragraph style used for the Tips */
+{
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-image: url('../Images/Assets/Icons/MainIcons/Tips-white.png');
+	background-position: 15px center;
+	background-repeat: no-repeat;
+	border: solid 1px #fff;
+	border-radius: 6px;
+	line-height: 1em;
+	overflow: hidden;
+	padding: 15px 0px 15px 60px;
+	text-align: left;
+	margin: 5px 30px;
+}
+
+/*==Home Page Footer Section==*/
 
 div.footer
 {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	background: black;
-	background: -webkit-linear-gradient(#282828, #282828, #282828);
-	background: -o-linear-gradient(#282828, #282828, #282828);
-	background: -moz-linear-gradient(#282828, #282828, #282828);
-	background: linear-gradient(#282828, #282828, #282828);
+	padding-top: 50px;
 }
 
-div.footer a
+div.footer a	/*Complex Selector: Any anchor (links) tags that are within div.footer will have the following properties */
 {
 	text-decoration: none;
 	color: #DADADA;
 }
 
-div.footer p	/* Complex Selector: Any <p> that is contained within div.footer will have the following properties */
+div.footer > div.outer-row
 {
-	font-size: 0.8em;
-	color: #b1b1b1;
+	line-height: 30px;
+	padding: 0;
 }
 
 div.home-master-page-footer	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
 {
 	mc-grid-row: true;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 22.5%;
+	margin-right: 22.5%;
 	width: 55%;
 }
 
@@ -336,29 +424,26 @@ div.home-master-page-footer > div
 
 div.home-master-page-footer > div:nth-child(1)
 {
-	width: 25%;
+	width: 33.333%;
 	margin-left: 0%;
 }
 
 div.home-master-page-footer > div:nth-child(2)
 {
-	width: 50%;
+	width: 33.333%;
 	margin-left: 0%;
 }
 
 div.home-master-page-footer > div:nth-child(3)
 {
-	width: 25%;
+	width: 33.333%;
 	margin-left: 0%;
 }
 
-div.info-container
+div.footer p	/*Complex Selector: Any <p> that is contained within div.footer will have the following properties*/
 {
-	margin-left: auto;
-	margin-right: auto;
-	width: 75%;
-	padding-bottom: 75px;
-	text-align: center;
+	color: #7E8890;
+	font-size: 0.8em;
 }
 
 /*===========================================================================================================================================================
@@ -369,59 +454,10 @@ Styles after this point are styles that are for specific mediums. If any additio
 
 @media only screen and (max-width: 1279px)
 {
-	div.home-tiles > div:nth-child(1)
+	#content-section .right-section,
+	#content-section .left-section
 	{
-		width: 33.33333%;
-		margin-left: 10%;
-	}
-
-	div.home-tiles > div:nth-child(2)
-	{
-		width: 33.333%;
-		margin-left: 16.667%;
-	}
-
-	div.home-tiles > div:nth-child(3)
-	{
-		width: 33.33333%;
-		margin-left: 10%;
-		margin-top: 2%;
-	}
-
-	div.home-tiles > div:nth-child(4)
-	{
-		width: 33.333%;
-		margin-left: 16.667%;
-		margin-top: 2%;
-	}
-
-	div.info-section > div
-	{
-		text-align: center;
-	}
-
-	div.info-section > div:nth-child(1)
-	{
-		width: 100%;
-		margin-left: 0%;
-		margin-bottom: 10%;
-		margin-top: 5%;
-	}
-
-	div.info-section > div:nth-child(2)
-	{
-		width: 100%;
-		margin-left: 0%;
-		margin-bottom: 10%;
-		margin-top: 5%;
-	}
-
-	div.info-section > div:nth-child(3)
-	{
-		width: 100%;
-		margin-left: 0%;
-		margin-bottom: 10%;
-		margin-top: 5%;
+		padding: 0;
 	}
 
 	p.info-title
@@ -457,42 +493,38 @@ Styles after this point are styles that are for specific mediums. If any additio
 		width: 25%;
 		margin-left: 0%;
 	}
-}
 
-@media only screen and (max-width: 767px)
-{
 	div.home-tiles > div
 	{
-		margin-top: 2%;
+		float: left;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		background-color: transparent;
+		transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+		/*Adds transition animation when switching between screen sizes*/
+		-moz-border-radius: 20x;
+		-webkit-border-radius: 20px;
+		border-radius: 20px;
+		border: 1px solid #d3d3d3;
+		padding: 60px 10px;
 	}
 
 	div.home-tiles > div:nth-child(1)
 	{
-		width: 100%;
-		margin-left: 0%;
+		width: 32%;
+		margin-left: 1%;
 	}
 
 	div.home-tiles > div:nth-child(2)
 	{
-		width: 100%;
-		margin-left: 0%;
+		width: 32%;
+		margin-left: 1%;
 	}
 
 	div.home-tiles > div:nth-child(3)
 	{
-		width: 100%;
-		margin-left: 0%;
-	}
-
-	div.home-tiles > div:nth-child(4)
-	{
-		width: 100%;
-		margin-left: 0%;
-	}
-
-	p.tile-title
-	{
-		font-size: 1.1em;
+		width: 32%;
+		margin-left: 1%;
 	}
 
 	div.info-section > div
@@ -520,6 +552,25 @@ Styles after this point are styles that are for specific mediums. If any additio
 		width: 100%;
 		margin-left: 0%;
 	}
+}
+
+@media only screen and (max-width: 767px)
+{
+	#content-section
+	{
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	div.search-container
+	{
+		margin-bottom: 50px;
+	}
+
+	p.tile-title
+	{
+		font-size: 1.2em;
+	}
 
 	p.info-title
 	{
@@ -529,6 +580,61 @@ Styles after this point are styles that are for specific mediums. If any additio
 	p.info-content
 	{
 		font-size: 1em;
+	}
+
+	div.home-tiles > div
+	{
+		margin-top: 2%;
+	}
+
+	div.home-tiles > div:nth-child(1)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(2)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.home-tiles > div:nth-child(3)
+	{
+		width: 90%;
+		margin-left: 5%;
+	}
+
+	div.info-section > div
+	{
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	div.info-section > div:nth-child(1)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 10%;
+		margin-top: 5%;
+	}
+
+	div.info-section > div:nth-child(2)
+	{
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 5%;
+	}
+
+	div.info-section > div:nth-child(3)
+	{
+		width: 100%;
+		margin-left: 0%;
+	}
+
+	div.home-master-page-footer > div	/* Adds separators to the footer items when in mobile layout */
+	{
+		border-bottom: 1px solid #d3d3d3;
 	}
 
 	div.home-master-page-footer > div:nth-child(1)

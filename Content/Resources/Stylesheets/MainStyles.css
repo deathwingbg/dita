@@ -18,9 +18,20 @@ EXAMPLE: Since the search-bar is at the top of the topic page, it will be listed
 
 body
 {
+	width: ;
 	color: #404040;
-	font-family: Arial, Avenir, Myriad;
 	line-height: 1.7em;
+	background-color: #fff;
+	font-family: Arial;
+}
+
+.center
+{
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	float: none !important;
+	text-align: center;
 }
 
 a.MCBreadcrumbsLink
@@ -31,12 +42,12 @@ a.MCBreadcrumbsLink
 
 a.MCBreadcrumbsLink:visited
 {
-	color: #000000;
+	color: #7469b9;
 }
 
 a.MCBreadcrumbsLink:hover
 {
-	color: #19b9f3;
+	color: #000000;
 }
 
 h1
@@ -46,6 +57,8 @@ h1
 	margin-bottom: 8px;
 	padding-bottom: 10px;
 	margin-top: 30px;
+	font-family: Arial;
+	color: #7469b9;
 }
 
 h2
@@ -109,47 +122,132 @@ MadCap|xref
 
 MadCap|xref:hover
 {
-	color: #19b9f3;
+	color: #7469b9;
 }
 
-MadCap|dropDown
+MadCap|dropDownHotspot
+{
+	color: #7469b9;
+}
+
+MadCap|dropDownBody
+{
+	border-bottom: 1px solid #d3d3d3;
+}
+
+MadCap|dropDown	/*Change the "mc-open-image" and "mc-closed-image" properties to change the icons used in drop-downs*/
 {
 	mc-open-image: url('../Images/Assets/Icons/Arrows/arrow-down-gray.png');
 	mc-closed-image: url('../Images/Assets/Icons/Arrows/arrow-right-gray.png');
 }
 
-MadCap|dropDownHotspot
+/*==Master Page Topic Layout==*/
+
+nav.title-bar	/*Adds bottom border on top navigation bar*/
 {
-	color: #19b9f3;
+	border-bottom: 1px solid #d3d3d3;
+}
+
+div.top-bar	/*Contains the breadcrumbs and toolbar*/
+{
+	border-bottom: 1px solid #d3d3d3;
+	min-height: 50px;
+	/*Min-height is necessary for topics that are not included in a TOC*/
+}
+
+div.search-container
+{
+	padding-bottom: 20px;
+}
+
+/*==Elements for the left side of Master Page layout==*/
+
+div.side-menu	/*This is the div that the menu proxy is contained in*/
+{
+	padding-left: 10px;
+	margin-top: 15px;
+}
+
+div.side-content	/*This is the div for the side-content containing "Search Tips" and the "Contact Support" button*/
+{
+	padding-top: 10px;
+}
+
+MadCap|dropDownHead.side-content	/*Font properties for the "Search Tips" drop-down head */
+{
+	font-size: 1.1em;
 	font-weight: bold;
 }
 
-/*==Master Page Topic Layout==*/
-
-.main-section	/*This style applies the grey background. This HTML element is not on a master page, it is used at compile time.*/
+div.cta	/*Call to action button/Contact Support button*/
 {
-	background: #ececec;
+	-moz-border-radius: 60px;
+	-webkit-border-radius: 60px;
+	border-radius: 60px;
+	padding: 2px 0px;
+	border: 1px solid #7469b9;
+	width: 162px;
+	color: #7469b9;
+	transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+	margin-top: 20px;
 }
 
-nav.title-bar	/*Adds transparency to the top navigation bar*/
+div.cta:hover	/*When hovering over the CTA button the following properties will apply*/
 {
-	opacity: 0.8;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+	transform: scale(1.01);
 }
 
-div.content-container	/*Wraps the content on the masterpage and provides the white background behind topics.*/
+a.cta:link
 {
-	margin-right: 0;
-	background-color: #FFF;
-	padding: 25px;
-	min-height: 95vh;
+	color: #FFF;
+	text-decoration: none;
 }
 
-div.side-content	/*Container for Menu proxy*/
+a.cta:visited
 {
-	float: right;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	width: 33.33%;
+	color: #FFF;
+	text-decoration: none;
+}
+
+div.topic-layout	/*This is a custom responsive layout row style (div class) in your stylesheet. To provide your own description for this style: (1) Open the stylesheet; (2) Find and select the div class with this name; and (3) In the Comment field, replace this text with your own. For more information on adding comments to styles, see the online Help.*/
+{
+	mc-grid-row: true;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.topic-layout::before
+{
+	content: ' ';
+	display: table;
+}
+
+div.topic-layout::after
+{
+	content: ' ';
+	display: table;
+	clear: both;
+}
+
+div.topic-layout > div
+{
+	float: left;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+div.topic-layout > div:nth-child(1)	/*Menu Proxy container*/
+{
+	width: 25%;
+	margin-left: 0%;
+	border-right: 1px solid #d3d3d3;
+}
+
+div.topic-layout > div:nth-child(2)
+{
+	width: 73%;
+	margin-left: 2%;
 }
 
 /*===========================================================================================================================================================
@@ -160,14 +258,34 @@ Styles after this point are styles that are for specific mediums. If any additio
 
 @media only screen and (max-width: 1279px)
 {
-	
+	div.topic-layout > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		width: 98%;
+		margin-left: 2%;
+	}
 }
 
 @media only screen and (max-width: 767px)
 {
-	.main-section > .outer-row	/* Removes the padding around the topic container in mobile */
+	div.top-bar
 	{
-		padding: 0;
+		min-height: 0;
+	}
+
+	div.topic-layout > div:nth-child(1)
+	{
+		display: none;
+	}
+
+	div.topic-layout > div:nth-child(2)
+	{
+		width: 98%;
+		margin-left: 2%;
 	}
 }
 
