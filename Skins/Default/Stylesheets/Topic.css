@@ -489,15 +489,27 @@ div.MCBreadcrumbsBox_0
 	margin-bottom: 10px;
 }
 
+.xref
+{
+	color: #2D8DCC;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.xref:hover
+{
+	color: #048EF8;
+}
+
 .dropDownHotspot
 {
-	color: #7469b9;
+	color: #048EF8;
 	text-decoration: none;
 }
 
 .dropDownHotspot:link
 {
-	color: #7469b9;
+	color: #048EF8;
 	text-decoration: none;
 }
 
@@ -520,12 +532,6 @@ div.MCBreadcrumbsBox_0
 .dropDownHead
 {
 	text-decoration: none;
-}
-
-.dropDownHead.dropDownHeadside-content
-{
-	font-size: 1.1em;
-	font-weight: bold;
 }
 
 .dropDownBody

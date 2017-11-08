@@ -1,1 +1,1 @@
-define({});
+define({'Payment Gateway':[5],});

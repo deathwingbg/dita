@@ -1,1 +1,1 @@
-define({});
+define({'Payment':{l:[{u:'/Content/A_Guides/A_myPOS Checkout API/AA_Payment Gateway Details/Implementation Basics.htm#kanchor1',t:'Implementation Basics'}]}});

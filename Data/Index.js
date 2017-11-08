@@ -1,1 +1,1 @@
-define({numchunks:1,prefix:'Index_Chunk',terms:[]});
+define({numchunks:1,prefix:'Index_Chunk',terms:[{t:'Payment',c:0,$:1}]});
