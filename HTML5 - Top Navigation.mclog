@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2017 r3 Generated HTML5 - Top Navigation.fltar" Date="2017-11-08T13:23:19.6524457+02:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2017 r3 Generated HTML5 - Top Navigation.fltar" Date="2017-11-08T13:27:09.6130769+02:00">
     <Messages>Compiling target HTML5 - Top Navigation...
 WARNING: Please note that you are using a trial version. The generated output will contain scrambled content.
 Removing previously generated content...
@@ -39,12 +39,9 @@ Processing topic: A_Guides\A_myPOS Checkout API\AA_Payment Gateway Details\Curre
 Applying master page OtherTopics.flmsp...
 Generated A_Guides\A_myPOS Checkout API\AA_Payment Gateway Details\Currencies Accepted At myPOS Checkout API.htm
 Processing topic: A_Guides\A_myPOS Checkout API\AA_Payment Gateway Details\Implementation Basics.htm...
-Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\Images\diagram.png
-Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\Images\payment_page.png
 Applying master page OtherTopics.flmsp...
 Generated A_Guides\A_myPOS Checkout API\AA_Payment Gateway Details\Implementation Basics.htm
 Processing topic: A_Guides\A_myPOS Checkout API\AA_Payment Gateway Details\Security and availability.htm...
-Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\Images\3DSpayment.png
 Applying master page OtherTopics.flmsp...
 Generated A_Guides\A_myPOS Checkout API\AA_Payment Gateway Details\Security and availability.htm
 Processing topic: A_Guides\A_myPOS Checkout API\AA_Payment Gateway Details\Use of Trademarks On Merchant's Website.htm...
@@ -869,9 +866,6 @@ Saving log to "C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Output\pa
         <LogEntry File="../../../Content/Resources/phpAPI/resources/bootstrap.min.css" Message="Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\phpAPI\fonts\glyphicons-halflings-regular.woff" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10001" />
         <LogEntry File="../../../Content/Resources/phpAPI/resources/bootstrap.min.css" Message="Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\phpAPI\fonts\glyphicons-halflings-regular.ttf" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10001" />
         <LogEntry File="../../../Content/Resources/phpAPI/resources/bootstrap.min.css" Message="Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\phpAPI\fonts\glyphicons-halflings-regular.svg" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10001" />
-        <LogEntry File="../../../Content/A_Guides/A_myPOS Checkout API/AA_Payment Gateway Details/Implementation Basics.htm" Message="Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\Images\diagram.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10001" />
-        <LogEntry File="../../../Content/A_Guides/A_myPOS Checkout API/AA_Payment Gateway Details/Implementation Basics.htm" Message="Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\Images\payment_page.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10001" />
-        <LogEntry File="../../../Content/A_Guides/A_myPOS Checkout API/AA_Payment Gateway Details/Security and availability.htm" Message="Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\Images\3DSpayment.png" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10001" />
         <LogEntry Message="Missing linked stylesheet file:///C:/Users/pavel.parushev/Documents/My Projects/devs/devs/Content/Resources/TableStyles/PatternedRows.css" LineIndex="-1" CharIndex="-1" Subsystem="CSS" ErrorID="10010" />
         <LogEntry Message="Missing table style C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\TableStyles\PatternedRows.css" LineIndex="-1" CharIndex="-1" Subsystem="BoxLayout" ErrorID="10008" />
         <LogEntry File="../../../Content/A_Guides/A_myPOS Checkout API/BB_Technical Integration/Data Type Formats.htm" Message="Missing linked source file: C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Content\Resources\TableStyles\PatternedRows.css" LineIndex="-1" CharIndex="-1" Subsystem="Compiler" Target="HTML5 - Top Navigation" ErrorID="10001" />
