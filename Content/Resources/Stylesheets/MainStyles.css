@@ -41,7 +41,7 @@ a.MCBreadcrumbsLink
 
 a.MCBreadcrumbsLink:visited
 {
-	color: #7469b9;
+	color: #048EF8;
 }
 
 a.MCBreadcrumbsLink:hover
@@ -109,6 +109,7 @@ MadCap|breadcrumbsProxy
 	font-size: .7em;
 	font-style: italic;
 	mc-breadcrumbs-prefix: 'You are here: ';
+	color: #048ef8;
 }
 
 MadCap|xref
@@ -247,6 +248,33 @@ div.topic-layout > div:nth-child(2)
 {
 	width: 73%;
 	margin-left: 2%;
+}
+
+/* Add an entry for "separators" in the TOC. To use this style, select the item
+   in the Flare TOC and pick "TOCSeparator" as the TOC Entry style. Note along 
+   with this change we needed to add the TOCSeparator entry to the Flare skin */
+
+ul.menu li.TOCSeparator
+{
+	padding-top: 8px;
+}
+
+ul.menu li.TOCSeparator a
+{
+	/* Note that the next two items are being over-written by Flare classes. 
+       Use important to right this. */
+	/* This is the Flare class: ul.menu._Skins_SideMenu.mc-component li > a  */
+	font-weight: bold !important;
+	color: #2a2a2a !important;
+	/* Set the default cursor so it doesn't look like this is a link */
+	cursor: default;
+}
+
+ul.menu ul > li.TOCSeparator > a:hover
+{
+	/* Flare over-writes this class too, so need to make it important 
+       to avoid hover decoration. */
+	background: #ffffff !important;
 }
 
 /*===========================================================================================================================================================

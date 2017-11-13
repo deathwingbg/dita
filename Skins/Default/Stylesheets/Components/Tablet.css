@@ -257,12 +257,15 @@
 
 	ul.menu._Skins_SideMenu.mc-component
 	{
+		font-family: Arial;
+		font-size: 15px;
 		background-color: transparent;
 	}
 
 	ul.menu._Skins_SideMenu.mc-component a
 	{
-		
+		font-family: Arial;
+		font-size: 15px;
 	}
 
 	ul.menu._Skins_SideMenu.mc-component li > a

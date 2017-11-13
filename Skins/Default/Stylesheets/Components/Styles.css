@@ -780,8 +780,9 @@ ul.menu._Skins_SideMenu.mc-component a
 
 ul.menu._Skins_SideMenu.mc-component li > a
 {
-	color: #a9a9a9;
+	color: #000000;
 	font-family: Arial;
+	font-weight: bold;
 	margin-left: 0px;
 	margin-right: 0px;
 	margin-top: 0px;
@@ -795,8 +796,10 @@ ul.menu._Skins_SideMenu.mc-component li > a
 
 ul.menu._Skins_SideMenu.mc-component ul > li > a
 {
+	color: #a9a9a9;
+	font-weight: normal;
 	padding-left: 20px;
-	padding-top: 6px;
+	padding-top: 8px;
 	padding-bottom: 6px;
 	background-color: transparent;
 }

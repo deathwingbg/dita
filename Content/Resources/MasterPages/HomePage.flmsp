@@ -1,11 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="335" MadCap:lastWidth="875">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:lastBlockDepth="10" MadCap:lastHeight="382" MadCap:lastWidth="1160">
     <head>
         <meta charset="utf-8" />
         <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>
-        </title>
+        <meta name="author" content="" /><title></title>
         <link href="../Stylesheets/StylesForHomePage.css" rel="stylesheet" type="text/css" />
     </head>
     <body>
@@ -25,30 +23,18 @@
                             <col />
                             <tbody>
                                 <tr>
-                                    <td>
-                                        <a href="[%=General.Facebook%]" target="_blank">
-                                            <img src="../Images/Assets/Icons/SocialMedia/FB-gray.png" />
-                                        </a>
+                                    <td><a href="[%=General.Facebook%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/FB-gray.png" /></a>
                                     </td>
                                     <td>
-                                        <p>
-                                            <a href="[%=General.Twitter%]" target="_blank">
-                                                <img src="../Images/Assets/Icons/SocialMedia/Twitter-gray.png" />
-                                            </a>
+                                        <p><a href="[%=General.Twitter%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Twitter-gray.png" /></a>
                                         </p>
                                     </td>
                                     <td>
-                                        <p>
-                                            <a href="[%=General.Instagram%]" target="_blank">
-                                                <img src="../Images/Assets/Icons/SocialMedia/Insta-gray.png" />
-                                            </a>
+                                        <p><a href="[%=General.Instagram%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/Insta-gray.png" /></a>
                                         </p>
                                     </td>
                                     <td>
-                                        <p>
-                                            <a href="[%=General.LinkedIn%]" target="_blank">
-                                                <img src="../Images/Assets/Icons/SocialMedia/LI-gray.png" />
-                                            </a>
+                                        <p><a href="[%=General.LinkedIn%]" target="_blank"><img src="../Images/Assets/Icons/SocialMedia/LI-gray.png" /></a>
                                         </p>
                                     </td>
                                 </tr>
@@ -57,24 +43,20 @@
                     </div>
                     <div>
                         <p>
-                            <img src="../Images/Assets/PlaceholderLogo/PlaceholderLogo-gray.png" />
+                            <img src="../Images/logo.png" style="width: 24px;height: 28px;" />
                         </p>
-                        <p>
-                            <MadCap:variable name="General.CompanyName" />
+                        <p><MadCap:variable name="General.CompanyName" />
                         </p>
                     </div>
                     <div>
                         <p>
                             <img src="../Images/Assets/Icons/MainIcons/Contact-gray.png" />
                         </p>
-                        <p>
-                            <MadCap:variable name="General.Email" />
+                        <p><MadCap:variable name="General.Email" />
                         </p>
-                        <p>
-                            <MadCap:variable name="General.PhoneNumber" />
+                        <p><MadCap:variable name="General.PhoneNumber" />
                         </p>
-                        <p>
-                            <MadCap:variable name="General.StreetAddress" /> <MadCap:variable name="General.CityStateZip" /></p>
+                        <p><MadCap:variable name="General.StreetAddress" /> <MadCap:variable name="General.CityStateZip" /></p>
                     </div>
                 </div>
             </div>

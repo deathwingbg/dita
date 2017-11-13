@@ -482,23 +482,12 @@ div.MCBreadcrumbsBox_0
 	border-bottom: none;
 	font-size: .7em;
 	font-style: italic;
+	color: #048ef8;
 	border-bottom-width: 1px;
 	border-bottom-style: none;
 	border-bottom-color: black;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
-}
-
-.xref
-{
-	color: #2D8DCC;
-	font-weight: bold;
-	text-decoration: underline;
-}
-
-.xref:hover
-{
-	color: #048EF8;
 }
 
 .dropDownHotspot
