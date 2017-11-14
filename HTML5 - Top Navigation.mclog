@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<MadCapLog Protocol="2" Description="MadCap Flare 2017 r3 Generated HTML5 - Top Navigation.fltar" Date="2017-11-13T13:43:28.5055727+02:00">
+<MadCapLog Protocol="2" Description="MadCap Flare 2017 r3 Generated HTML5 - Top Navigation.fltar" Date="2017-11-14T10:54:29.9533274+02:00">
     <Messages>Compiling target HTML5 - Top Navigation...
 WARNING: Please note that you are using a trial version. The generated output will contain scrambled content.
 Removing previously generated content...
@@ -118,7 +118,7 @@ Generating final output...
 Generated Default.htm
 Saving result set...
 Ignored Compiler Warnings: 19
-Output generated in 4 second(s).
+Output generated in 5 second(s).
 
 Done
 Saving log to "C:\Users\pavel.parushev\Documents\My Projects\devs\devs\Output\pavel_parushev\HTML5 - Top Navigation\HTML5 - Top Navigation.mclog"

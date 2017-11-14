@@ -59,7 +59,7 @@
 
 	.title-bar-section.middle > div
 	{
-		min-height: 81px;
+		min-height: 84px;
 	}
 
 	ul.navigation
@@ -79,12 +79,12 @@
 		background-position: center center;
 		background-repeat: no-repeat;
 		margin: 0 auto;
-		width: 84px;
-		height: 81px;
+		width: 90px;
+		height: 84px;
 		top: 0;
 		bottom: auto;
 		margin-top: 0;
-		background: transparent url('Images/myposdevs.png') no-repeat center center;
+		background: transparent url('Images/84_devs_1.png') no-repeat center center;
 	}
 
 	.title-bar .menu-icon span
